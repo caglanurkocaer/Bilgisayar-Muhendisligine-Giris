@@ -1,0 +1,30 @@
+# Basit Hesap Makinesi
+
+# Kullanıcıdan sayıları al
+sayi1 = float(input("Birinci sayiyi girin: "))
+sayi2 = float(input("Ikinci sayiyi girin: "))
+
+#İşlem seceneklerini goster
+print("Yapmak istediginiz işlemi secin: ")
+print("1. Toplama (+)")
+print("2. Çikarma (-)")
+print("3. Çarpma (*)")
+print("4. Bölme (/)")
+
+#Seçimi al 
+secim = input("Seçiminizi girin (1/2/3/4): ")
+
+#Hesaplma
+if secim =='1':
+    print(sayi1, "+", sayi2, "=", sayi1 + sayi2)
+elif secim == '2':
+    print(sayi1, "-", sayi2, "=",sayi1 - sayi2)
+elif secim == '3':
+    print(sayi1, "*", sayi2, "=", sayi1 * sayi2)
+elif secim == '4':
+    if sayi2  != 0:
+        print(sayi1, "/", sayi2, "=", sayi1 / sayi2)
+    else:
+        print("Bie sayi sifira bolunemez!")
+else:
+     print("Gecersiz secim yaptiniz")
